@@ -1,0 +1,31 @@
+button {
+  background: black;
+  color: white;
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+.outer {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: inline-block;
+}
+.container {
+  display: inline-block;
+  transform: translateY(0px);
+  will-change: transform;
+  transition: transform 0.3s;
+}
+button:hover .container {
+  transform: translateY(-100%);
+  background-color: red;
+}
+button:hover {
+  background-color: red;
+}
+.second {
+  display: block;
+  position: absolute;
+  top: 100%;
+}
